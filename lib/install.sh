@@ -7,7 +7,7 @@ if [[ ! "$IMG" =~ ^img[0-9]+$ ]]; then
   exit 1
 fi
 
-URL="https://raw.githubusercontent.com/YOUR_USERNAME/creeper/main/images/$IMG.png"
+URL="https://raw.githubusercontent.com/codingaxolotl/creeper/main/images/$IMG.png"
 DEST="$HOME/Downloads/$IMG.png"
 
 echo "⬇️ Downloading $IMG.png..."
