@@ -1,0 +1,28 @@
+#!/bin/bash
+
+CMD="$1"
+shift
+
+BASE_DIR="$(dirname "$0")/../lib"
+
+case "$CMD" in
+  install)
+    bash "$BASE_DIR/install.sh" "$@"
+    ;;
+  multiple)
+    bash "$BASE_DIR/multiple.sh" "$@"
+    ;;
+  explore)
+    bash "$BASE_DIR/explore.sh" "$@"
+    ;;
+  version)
+    bash "$BASE_DIR/version.sh"
+    ;;
+  update)
+    bash "$BASE_DIR/update.sh"
+    ;;
+  help|*)
+    bash "$BASE_DIR/help.sh"
+    ;;
+esac
+
