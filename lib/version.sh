@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION_URL="https://raw.githubusercontent.com/CodingAxolotl/creeper/main/version/v1.txt"
+VERSION_URL="https://raw.githubusercontent.com/CodingAxolotl/creeper/main/version/v2.txt"
 VERSION=$(curl -s "$VERSION_URL" | tr -d '\n')
 
 if [ -z "$VERSION" ]; then
@@ -9,4 +9,3 @@ if [ -z "$VERSION" ]; then
 fi
 
 echo "🟢 Creeper version: $VERSION"
-
