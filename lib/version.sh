@@ -1,10 +1,10 @@
 #!/bin/bash
 
-VERSION_URL="https://raw.githubusercontent.com/CodingAxolotl/creeper/main/version/v2.txt"
+VERSION_URL="https://raw.githubusercontent.com/CodingAxolotl/creeper/refs/heads/main/version/latest.txt"
 VERSION=$(curl -s "$VERSION_URL" | tr -d '\n')
 
 if [ -z "$VERSION" ]; then
-  echo "❌ Could not fetch version."
+  echo "❌ Could not determine Creeper version."
   exit 1
 fi
 
